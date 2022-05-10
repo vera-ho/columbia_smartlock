@@ -1,0 +1,49 @@
+/*
+ * demo_global_defines.h
+ *
+ * Created: 3/8/2015 3:12:07 PM
+ *  Author: oscar.sanchez
+ */ 
+
+
+#ifndef DEMO_GLOBAL_DEFINES_H_
+#define DEMO_GLOBAL_DEFINES_H_
+
+#define STRING_EOL    "\r\n"
+
+#define STRING_HEADER "-- WINC1500 temperature sensor demo --"STRING_EOL\
+"-- "BOARD_NAME" --"STRING_EOL\
+"-- Compiled: "__DATE__" "__TIME__" --"STRING_EOL
+
+#define STRING_MENU\				
+" DEMO MENU "STRING_EOL\
+" CHOOSE AN OPTION"STRING_EOL\
+"A-> Run ECC508 Write Configuration and Data Zone then Lock"STRING_EOL\
+"B-> Run ECC508 Write User Data Zone and Lock(Only if necessary)"STRING_EOL\
+"C-> Run Wifi Demo with Crypto Authentication"STRING_EOL
+
+#define STRING_WARNING_1\	
+"\n\nMAKE SURE ONLY CRYPTO AUTHENTICATION "STRING_EOL\
+"WING IS CONNECTED TO D21 FOR CONFIGURATION. "STRING_EOL\
+"WHEN DONE CHOOSE 'A' AGAIN FROM MENU"STRING_EOL
+
+#define STRING_WARNING_2\	
+"\n\nIMPORTANT MAKE SURE ONLY CRYPTO AUTHENTICATION WING"STRING_EOL\
+"IS CONNECTED TO D21 FOR CONFIGURATION. WHEN DONE"STRING_EOL\
+"CHOOSE 'A' AGAIN FROM MENU"STRING_EOL
+
+
+#define CONF_CONFIG_ZONE_DONE\	
+" DEVICE CONFIGURATION ZONE WRITEN AND LOCK "STRING_EOL\
+" NEW I2C ADDRESS IS: 0x10"STRING_EOL				
+
+
+
+
+
+
+
+
+
+
+#endif /* DEMO_GLOBAL_DEFINES_H_ */

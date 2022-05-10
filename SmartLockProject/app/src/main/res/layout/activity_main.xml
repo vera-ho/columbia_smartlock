@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#006680"
+    android:id="@+id/main_view">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:onClick="authenticateUser"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/usernameEntry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/username_text"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:textColor="#FFFFFF"
+        android:hint="@string/hint_username" />
+
+    <EditText
+        android:id="@+id/passwordEntry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:layout_below="@+id/usernameEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/password_text"
+        android:textColor="#FFFFFF"
+        android:hint="@string/hint_password" />
+
+    <TextView
+        android:id="@+id/loginStatus"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/hashValue"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/hash_output"
+        android:layout_below="@+id/loginStatus"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
